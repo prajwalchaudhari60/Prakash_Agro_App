@@ -52,9 +52,16 @@ It includes authentication, a clean dashboard, and a scalable structure for futu
 
 ### Preview
 
-![Interface](screenshots/interface.jpeg)
-![Login](screenshots/login.jpeg)
-![Dashboard](screenshots/dashboard.jpeg)
+<p align="center">
+  <b>Interface</b><br>
+  <img src="screenshots/interface.jpeg" width="200"/><br><br>
+
+  <b>Login Screen</b><br>
+  <img src="screenshots/login.jpeg" width="200"/><br><br>
+
+  <b>Dashboard</b><br>
+  <img src="screenshots/dashboard.jpeg" width="200"/>
+</p>
 
 ### View in Full Size
 
