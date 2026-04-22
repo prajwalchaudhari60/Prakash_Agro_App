@@ -6,23 +6,17 @@
 
 ## 🚀 Badges
 
-![Flutter]([https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter](https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter))
+![Flutter](https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-Language-blue?logo=dart)
+![Firebase](https://img.shields.io/badge/Firebase-Backend-orange?logo=firebase)
 
-![Dart]([https://img.shields.io/badge/Dart-Language-blue?logo=dart](https://img.shields.io/badge/Dart-Language-blue?logo=dart))
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
-![Firebase]([https://img.shields.io/badge/Firebase-Backend-orange?logo=firebase](https://img.shields.io/badge/Firebase-Backend-orange?logo=firebase))
-
-![Platform]([https://img.shields.io/badge/Platform-Android-green](https://img.shields.io/badge/Platform-Android-green))
-
-![Status]([https://img.shields.io/badge/Status-Active-success](https://img.shields.io/badge/Status-Active-success))
-
-![Repo Size]([https://img.shields.io/github/repo-size/prajwalchaudhari60/prakash_agro_app](https://img.shields.io/github/repo-size/prajwalchaudhari60/prakash_agro_app))
-
-![Stars]([https://img.shields.io/github/stars/prajwalchaudhari60/prakash_agro_app?style=social](https://img.shields.io/github/stars/prajwalchaudhari60/prakash_agro_app?style=social))
-
-![Forks]([https://img.shields.io/github/forks/prajwalchaudhari60/prakash_agro_app?style=social](https://img.shields.io/github/forks/prajwalchaudhari60/prakash_agro_app?style=social))
-
-![Issues]([https://img.shields.io/github/issues/prajwalchaudhari60/prakash_agro_app](https://img.shields.io/github/issues/prajwalchaudhari60/prakash_agro_app))
+![Repo Size](https://img.shields.io/github/repo-size/prajwalchaudhari60/prakash_agro_app)
+![Stars](https://img.shields.io/github/stars/prajwalchaudhari60/prakash_agro_app?style=social)
+![Forks](https://img.shields.io/github/forks/prajwalchaudhari60/prakash_agro_app?style=social)
+![Issues](https://img.shields.io/github/issues/prajwalchaudhari60/prakash_agro_app)
 
 ## 📱 Project Overview
 
@@ -57,10 +51,13 @@ It includes authentication, a clean dashboard, and a scalable structure for futu
 ## 📸 Screenshots
 
 ### 🔹 Interface
+![Interface](screenshots/interface.jpeg)
 
 ### 🔹 Login Screen
+![Login](screenshots/login.jpeg)
 
 ### 🔹 Dashboard
+![Dashboard](screenshots/dashboard.jpeg)
 
 ---
 
