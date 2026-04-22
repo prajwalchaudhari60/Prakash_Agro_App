@@ -53,9 +53,9 @@ It includes authentication, a clean dashboard, and a scalable structure for futu
 ### Preview
 
 <p align="center">
-  <img src="screenshots/interface.jpeg" width="250"/>
-  <img src="screenshots/login.jpeg" width="250"/>
-  <img src="screenshots/dashboard.jpeg" width="250"/>
+  <img src="screenshots/interface.jpeg" width="220" height="450" style="object-fit:cover;"/>
+  <img src="screenshots/login.jpeg" width="220" height="450" style="object-fit:cover;"/>
+  <img src="screenshots/dashboard.jpeg" width="220" height="450" style="object-fit:cover;"/>
 </p>
 
 ### View in Full Size
