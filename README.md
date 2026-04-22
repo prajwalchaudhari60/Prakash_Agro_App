@@ -1,17 +1,134 @@
-# prakash_agro_app
+# 🌱 Prakash Agro App
 
-A new Flutter project.
+> A modern Flutter-based mobile application designed to simplify agricultural services and provide a smooth user experience.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Badges
 
-A few resources to get you started if this is your first Flutter project:
+![Flutter]([https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter](https://img.shields.io/badge/Flutter-Framework-blue?logo=flutter))
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+![Dart]([https://img.shields.io/badge/Dart-Language-blue?logo=dart](https://img.shields.io/badge/Dart-Language-blue?logo=dart))
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Firebase]([https://img.shields.io/badge/Firebase-Backend-orange?logo=firebase](https://img.shields.io/badge/Firebase-Backend-orange?logo=firebase))
+
+![Platform]([https://img.shields.io/badge/Platform-Android-green](https://img.shields.io/badge/Platform-Android-green))
+
+![Status]([https://img.shields.io/badge/Status-Active-success](https://img.shields.io/badge/Status-Active-success))
+
+![Repo Size]([https://img.shields.io/github/repo-size/prajwalchaudhari60/prakash_agro_app](https://img.shields.io/github/repo-size/prajwalchaudhari60/prakash_agro_app))
+
+![Stars]([https://img.shields.io/github/stars/prajwalchaudhari60/prakash_agro_app?style=social](https://img.shields.io/github/stars/prajwalchaudhari60/prakash_agro_app?style=social))
+
+![Forks]([https://img.shields.io/github/forks/prajwalchaudhari60/prakash_agro_app?style=social](https://img.shields.io/github/forks/prajwalchaudhari60/prakash_agro_app?style=social))
+
+![Issues]([https://img.shields.io/github/issues/prajwalchaudhari60/prakash_agro_app](https://img.shields.io/github/issues/prajwalchaudhari60/prakash_agro_app))
+
+## 📱 Project Overview
+
+**Prakash Agro App** is an Android application built using Flutter that helps users interact with agricultural services efficiently. The app focuses on simplicity, performance, and real-world usability.
+
+It includes authentication, a clean dashboard, and a scalable structure for future enhancements like e-commerce and order tracking.
+
+---
+
+## ✨ Features
+
+* 🔐 OTP-based Phone Authentication (Firebase)
+* 📲 Clean and user-friendly UI
+* 🏠 Dashboard screen for navigation
+* 🌍 Country code picker support
+* ⚡ Fast and responsive performance
+* 🔥 Firebase backend integration
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology    | Description               |
+| ------------- | ------------------------- |
+| Flutter       | Cross-platform UI toolkit |
+| Dart          | Programming language      |
+| Firebase Auth | Phone OTP authentication  |
+| Material UI   | UI components             |
+
+---
+
+## 📸 Screenshots
+
+### 🔹 Interface
+
+### 🔹 Login Screen
+
+### 🔹 Dashboard
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/prajwalchaudhari60/prakash_agro_app.git
+```
+
+2. Navigate to project folder:
+
+```bash
+cd prakash_agro_app
+```
+
+3. Install dependencies:
+
+```bash
+flutter pub get
+```
+
+4. Run the app:
+
+```bash
+flutter run
+```
+
+---
+
+## 📂 Project Structure
+
+```
+lib/
+ ┣ screens/
+ ┣ widgets/
+ ┣ services/
+ ┗ main.dart
+```
+
+---
+
+## 🎯 Future Enhancements
+
+* 🛒 Add product purchase feature
+* 📦 Order tracking system
+* 📊 Admin panel
+* 🌐 Multi-language support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repository and submit a pull request.
+
+---
+
+## 📧 Contact
+
+* GitHub: [https://github.com/prajwalchaudhari60](https://github.com/prajwalchaudhari60)
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+> Built with ❤️ using Flutter
