@@ -54,10 +54,10 @@ It includes authentication, a clean dashboard, and a scalable structure for futu
 
 <p align="center">
   <b>Interface</b><br>
-  <img src="screenshots/interface.jpeg" width="200"/><br><br>
+  <img src="screenshots/interface.jpeg" width="200"/>
 
   <b>Login Screen</b><br>
-  <img src="screenshots/login.jpeg" width="200"/><br><br>
+  <img src="screenshots/login.jpeg" width="200"/>
 
   <b>Dashboard</b><br>
   <img src="screenshots/dashboard.jpeg" width="200"/>
