@@ -18,7 +18,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ? homePage()
           : currentIndex == 1
               ? productsPage()
-              : contactPage(),
+              : currentIndex == 2
+                  ? contactPage()
+                  : aboutPage(),
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
@@ -37,12 +39,16 @@ class _HomeScreenState extends State<HomeScreen> {
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.category),
+            icon: Icon(Icons.agriculture),
             label: "Products",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.phone),
             label: "Contact",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "About",
           ),
         ],
       ),
@@ -80,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Welcome Guest",
+                        "Welcome to Prakash Agro Services",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 22,
@@ -191,6 +197,11 @@ class _HomeScreenState extends State<HomeScreen> {
         textAlign: TextAlign.center,
       ),
     );
+  }
+
+  // ✅ ABOUT PAGE
+  Widget aboutPage() {
+    return Center(child: Text("About Prakash Agro Services"));
   }
 
   // ✅ PRODUCT DATA
