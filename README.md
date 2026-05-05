@@ -94,6 +94,33 @@ flutter run
 
 ---
 
+## 🔐 Firebase and Secret Configuration
+
+1. Copy `.env.example` to `.env` and fill in your Firebase values.
+2. Keep `.env` local and do not commit it.
+3. Keep `android/app/google-services.json` local; use `android/app/google-services.json.template` as a template.
+4. If the file was previously tracked by git, run:
+
+```bash
+git rm --cached android/app/google-services.json
+```
+
+5. For CI or production builds, use `--dart-define` or your CI secret store:
+
+```bash
+flutter run --dart-define=FIREBASE_API_KEY=...
+```
+
+---
+
+## 🔒 Firebase Security Best Practices
+
+* Use Firebase Security Rules for Firestore and Storage.
+* Restrict API keys in the Google Cloud Console to the Android/iOS bundle IDs and web origins that you trust.
+* Disable unused Firebase services and remove old API keys.
+* Enforce authentication in Firestore rules before permitting reads or writes.
+* Use Firebase App Check if you need to protect backend access from unauthorized apps.
+
 ## 📂 Project Structure
 
 ```

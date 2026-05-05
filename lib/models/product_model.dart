@@ -1,25 +1,27 @@
 class Product {
-  final String id;
-  final String name;
-  final String description;
-  final String image;
-  final String category;
+  String id;
+  String name;
+  double price;
+  String image;
+  String category;
 
   Product({
     required this.id,
     required this.name,
-    required this.description,
+    required this.price,
     required this.image,
     required this.category,
   });
 
-  factory Product.fromMap(Map<String, dynamic> data, String id) {
+  factory Product.fromFirestore(doc) {
+    var data = doc.data();
+
     return Product(
-      id: id,
-      name: data['name'] ?? '',
-      description: data['description'] ?? '',
-      image: data['image'] ?? '',
-      category: data['category'] ?? '',
+      id: doc.id,
+      name: data['name'],
+      price: data['price'].toDouble(),
+      image: data['image'],
+      category: data['category'],
     );
   }
 }

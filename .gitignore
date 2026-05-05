@@ -33,6 +33,13 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# Local environment and Firebase secrets
+.env
+.env.*
+**/local.properties
+**/google-services.json
+**/GoogleService-Info.plist
+
 # Symbolication related
 app.*.symbols
 

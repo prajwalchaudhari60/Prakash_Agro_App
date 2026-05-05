@@ -4,6 +4,18 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+const _firebaseApiKey = String.fromEnvironment('FIREBASE_API_KEY', defaultValue: '');
+const _firebaseAndroidAppId = String.fromEnvironment('FIREBASE_ANDROID_APP_ID', defaultValue: '');
+const _firebaseIosAppId = String.fromEnvironment('FIREBASE_IOS_APP_ID', defaultValue: '');
+const _firebaseWebAppId = String.fromEnvironment('FIREBASE_WEB_APP_ID', defaultValue: '');
+const _firebaseMacosAppId = String.fromEnvironment('FIREBASE_MACOS_APP_ID', defaultValue: '');
+const _firebaseWindowsAppId = String.fromEnvironment('FIREBASE_WINDOWS_APP_ID', defaultValue: '');
+const _firebaseLinuxAppId = String.fromEnvironment('FIREBASE_LINUX_APP_ID', defaultValue: '');
+const _firebaseMessagingSenderId = String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID', defaultValue: '');
+const _firebaseProjectId = String.fromEnvironment('FIREBASE_PROJECT_ID', defaultValue: '');
+const _firebaseStorageBucket = String.fromEnvironment('FIREBASE_STORAGE_BUCKET', defaultValue: '');
 
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
@@ -16,20 +28,11 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macOS - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return linux;
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -37,27 +40,64 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDedDYAzHO580vVCMn31aOISwZySW1QpHY',
-    appId: '1:29206482394:android:ecd5c732fee662edc084e3',
-    messagingSenderId: '29206482394',
-    projectId: 'prakash-agro-services',
-    storageBucket: 'prakash-agro-services.firebasestorage.app',
+  static FirebaseOptions get android => FirebaseOptions(
+    apiKey: _resolve(_firebaseApiKey, 'FIREBASE_API_KEY'),
+    appId: _resolve(_firebaseAndroidAppId, 'FIREBASE_ANDROID_APP_ID'),
+    messagingSenderId: _resolve(_firebaseMessagingSenderId, 'FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: _resolve(_firebaseProjectId, 'FIREBASE_PROJECT_ID'),
+    storageBucket: _resolve(_firebaseStorageBucket, 'FIREBASE_STORAGE_BUCKET'),
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDedDYAzHO580vVCMn31aOISwZySW1QpHY',
-    appId: '1:29206482394:ios:ecd5c732fee662edc084e3',
-    messagingSenderId: '29206482394',
-    projectId: 'prakash-agro-services',
-    storageBucket: 'prakash-agro-services.firebasestorage.app',
+  static FirebaseOptions get ios => FirebaseOptions(
+    apiKey: _resolve(_firebaseApiKey, 'FIREBASE_API_KEY'),
+    appId: _resolve(_firebaseIosAppId, 'FIREBASE_IOS_APP_ID'),
+    messagingSenderId: _resolve(_firebaseMessagingSenderId, 'FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: _resolve(_firebaseProjectId, 'FIREBASE_PROJECT_ID'),
+    storageBucket: _resolve(_firebaseStorageBucket, 'FIREBASE_STORAGE_BUCKET'),
   );
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDedDYAzHO580vVCMn31aOISwZySW1QpHY',
-    appId: '1:29206482394:web:ecd5c732fee662edc084e3',
-    messagingSenderId: '29206482394',
-    projectId: 'prakash-agro-services',
-    storageBucket: 'prakash-agro-services.firebasestorage.app',
+  static FirebaseOptions get web => FirebaseOptions(
+    apiKey: _resolve(_firebaseApiKey, 'FIREBASE_API_KEY'),
+    appId: _resolve(_firebaseWebAppId, 'FIREBASE_WEB_APP_ID'),
+    messagingSenderId: _resolve(_firebaseMessagingSenderId, 'FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: _resolve(_firebaseProjectId, 'FIREBASE_PROJECT_ID'),
+    storageBucket: _resolve(_firebaseStorageBucket, 'FIREBASE_STORAGE_BUCKET'),
   );
+
+  static FirebaseOptions get macos => FirebaseOptions(
+        apiKey: _resolve(_firebaseApiKey, 'FIREBASE_API_KEY'),
+        appId: _resolve(_firebaseMacosAppId, 'FIREBASE_MACOS_APP_ID'),
+        messagingSenderId: _resolve(_firebaseMessagingSenderId, 'FIREBASE_MESSAGING_SENDER_ID'),
+        projectId: _resolve(_firebaseProjectId, 'FIREBASE_PROJECT_ID'),
+        storageBucket: _resolve(_firebaseStorageBucket, 'FIREBASE_STORAGE_BUCKET'),
+      );
+
+  static FirebaseOptions get windows => FirebaseOptions(
+        apiKey: _resolve(_firebaseApiKey, 'FIREBASE_API_KEY'),
+        appId: _resolve(_firebaseWindowsAppId, 'FIREBASE_WINDOWS_APP_ID'),
+        messagingSenderId: _resolve(_firebaseMessagingSenderId, 'FIREBASE_MESSAGING_SENDER_ID'),
+        projectId: _resolve(_firebaseProjectId, 'FIREBASE_PROJECT_ID'),
+        storageBucket: _resolve(_firebaseStorageBucket, 'FIREBASE_STORAGE_BUCKET'),
+      );
+
+  static FirebaseOptions get linux => FirebaseOptions(
+        apiKey: _resolve(_firebaseApiKey, 'FIREBASE_API_KEY'),
+        appId: _resolve(_firebaseLinuxAppId, 'FIREBASE_LINUX_APP_ID'),
+        messagingSenderId: _resolve(_firebaseMessagingSenderId, 'FIREBASE_MESSAGING_SENDER_ID'),
+        projectId: _resolve(_firebaseProjectId, 'FIREBASE_PROJECT_ID'),
+        storageBucket: _resolve(_firebaseStorageBucket, 'FIREBASE_STORAGE_BUCKET'),
+      );
+}
+
+String _resolve(String dartDefineValue, String key) {
+  if (dartDefineValue.isNotEmpty) {
+    return dartDefineValue;
+  }
+
+  final dotenvValue = dotenv.env[key];
+  if (dotenvValue != null && dotenvValue.isNotEmpty) {
+    return dotenvValue;
+  }
+
+  throw StateError('Missing required Firebase environment value: $key');
 }
